@@ -1,0 +1,369 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #131112;
+  color: white;
+  font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.brands-container {
+  margin: 2rem 15rem;
+}
+
+.leading-movement {
+  text-align: center;
+  padding: 3rem;
+  color: white;
+}
+
+.leading-movement h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.leading-movement p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.learn-more-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.brand-right-arrow {
+  font-size: 1.5rem;
+}
+
+.our-brands-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.section-title-brand {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.video-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.video-row a {
+  text-align: center;
+}
+
+.brand-video {
+  object-fit: cover;
+  height: 300px;
+  width: 450px;
+  position: relative;
+  cursor: pointer;
+}
+
+.video_inside_img {
+  position: relative;
+  height: 100px;
+  width: 250px;
+  bottom: 200px;
+  right: 0px;
+}
+
+.multi-sections {
+  margin-top: 4rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.image-box {
+  position: relative;
+  width: 465px;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Blur Effect on the main image */
+.blur-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+/* Overlay container */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Image inside the overlay */
+.overlay-img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+/* Text inside the overlay */
+.overlay-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Show the overlay and adjust blur on hover */
+.image-box .image-overlay {
+  opacity: 3;
+}
+
+.image-box:hover .blur-img {
+  filter: blur(20px);
+}
+
+.section-title_playlist {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.image-row_playlist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.image-box_playlist {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Ensure images take full width and keep aspect ratio */
+.image-box_playlist img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+
+/* For medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .brands-container {
+    margin: 2rem;
+  }
+
+  .leading-movement {
+    padding: 2rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .brand-video {
+    height: 150px;
+    width: 200px;
+  }
+
+  .video_inside_img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .image-box img {
+    height: 150px;
+  }
+
+  .section {
+    margin: 0 2rem;
+  }
+
+  .section-title-brand {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .image-row {
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
+
+  .image-box {
+    width: 300px;
+    height: 250px;
+  }
+
+  .overlay-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .overlay-text {
+    font-size: 1rem;
+  }
+
+  /* Adjust the grid layout for smaller screens */
+  .image-row_playlist {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on medium screens */
+    gap: 1rem;
+    /* 1rem gap between images */
+  }
+
+  .image-box_playlist {
+    width: 100%;
+    /* Full width on medium screens */
+  }
+}
+
+/* For smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .brands-container {
+    margin: 1rem;
+  }
+
+  .leading-movement {
+    padding: 0.5rem;
+    text-align: left;
+    padding-top: 2rem;
+  }
+
+  .leading-movement h1 {
+    font-size: 1.4rem;
+  }
+
+  .leading-movement p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .learn-more-btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+
+
+
+  .section-title_playlist {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .video-row {
+    flex-direction: column;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .brand-video {
+    height: 200px;
+    width: 350px;
+  }
+
+  .video_inside_img {
+    height: 50px;
+    position: absolute;
+    width: 150px;
+    left: 100px;
+    top: 80px;
+  }
+
+  .image-box img {
+    height: 280px;
+  }
+
+  .section {
+    margin: 1rem;
+  }
+
+  .section-title-brand {
+
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-box {
+    width: 390px;
+    height: 400px;
+  }
+
+  .blur-img {
+    height: 100%;
+  }
+
+  .overlay-img {
+    width: 320px;
+    height: 900px;
+  }
+
+  .overlay-text {
+    font-size: 0.9rem;
+  }
+
+  .image-row_playlist {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for small screens */
+    gap: 1rem;
+    /* 1rem gap between images */
+  }
+
+  .image-box_playlist {
+    width: 100%;
+    /* Full width on small screens */
+  }
+}

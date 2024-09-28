@@ -1,0 +1,240 @@
+.monstercat-container {
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.monstercat-bg {
+  background-image: url('../../../images/music/uncaged//brand-uncaged-bg.webp');
+  /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monstercat-content {
+  text-align: center;
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 90%;
+  /* Ensure content doesn't overflow on smaller screens */
+  position: relative;
+}
+
+.monstercat-content h1 {
+  text-transform: lowercase;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.monstercat-content h2 {
+  font-size: 5rem;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: lowercase;
+}
+
+.monstercat-icons {
+  margin: 1rem 0;
+  color: #685BC7;
+}
+
+.monstercat-icons svg {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.monstercat-description {
+  margin: 1.5rem 0;
+  max-width: 1400px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.watch-trailer-btn {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.fade-down-arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Additional content styles */
+.additional-content {
+  display: none;
+  transition: 0.3s ease-in-out;
+  padding: 2rem 15rem;
+  background-color: #111111;
+}
+
+.additional-content.show {
+  display: block;
+}
+
+.additional-content-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-image img {
+  height: 600px;
+  width: 1000px;
+  object-fit: cover;
+}
+
+.right-content {
+  text-align: left;
+}
+
+.right-content h1 {
+  font-size: 2.5rem;
+  color: #685BC7;
+  ;
+  margin: 3rem 0;
+}
+
+.right-image p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.right-image img {
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .monstercat-content h2 {
+    font-size: 3rem;
+  }
+
+  .additional-content {
+    padding: 2rem 5rem;
+  }
+
+  .additional-content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-image img,
+  .right-image img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .monstercat-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .monstercat-description {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+
+  .watch-trailer-btn {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .additional-content {
+    padding: 2rem 1rem;
+  }
+
+  .left-image img,
+  .right-image img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .monstercat-bg {
+    height: 90vh;
+  }
+
+  .monstercat-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .monstercat-content h2 {
+    font-size: 6rem;
+    font-family: " Monument Extended", "Helvetica, Arial, sans-serif";
+
+  }
+
+  .monstercat-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+
+    /* Center the content vertically */
+    left: 50%;
+    /* Center the content horizontally */
+
+    transform: translate(-50%, -50%);
+    /* Offset the content to center */
+  }
+
+  .monstercat-description {
+    font-size: 0.8rem;
+  }
+
+  .watch-trailer-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .fade-down-arrow {
+    font-size: 1.5rem;
+  }
+
+  .additional-content {
+    padding: 1rem;
+  }
+
+  .left-image img,
+  .right-image img {
+    height: auto;
+    width: 100%;
+  }
+}

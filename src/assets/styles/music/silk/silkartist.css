@@ -1,0 +1,166 @@
+/* General Container Styles */
+.artists-container-silk {
+  margin: 4rem 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.section-title-artist-silk {
+  font-size: 2.5rem;
+  color: #F68E2F;
+  padding-left: 12rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* Card Slider Container */
+.card-container-silk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.card-slider-silk {
+  overflow: hidden;
+  width: 80%;
+}
+
+.card-wrapper-silk {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Individual Card Styles */
+.card-silk {
+  min-width: 24%;
+  /* Show 4 cards per view */
+  margin: 0 0.5rem;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height: 50vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-silk img {
+  width: 100%;
+  height: 90%;
+}
+
+.card-title-silk {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  height: 10%;
+}
+
+/* Navigation Buttons */
+.nav-button-silk {
+  background-color: gray;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.nav-button-silk:hover {
+  background-color: #F68E2F;
+}
+
+.nav-button-silk:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Positioning the Buttons */
+.left-button-silk {
+  left: 1%;
+}
+
+.right-button-silk {
+  right: 1%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .card-silk {
+    min-width: 33.33%;
+    /* Show 3 cards per view on tablets */
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-silk {
+    min-width: 50%;
+    /* Show 2 cards per view on smaller screens */
+    height: 35vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .artists-container-silk {
+
+    /* Reduce margin on mobile devices */
+    padding: 1rem;
+    /* Reduce padding */
+  }
+
+  .section-title-artist-silk {
+    font-size: 1.5rem;
+    /* Adjust font size */
+    padding-left: 0;
+    /* Remove left padding */
+    text-align: center;
+    /* Ensure left alignment */
+  }
+
+  .card-silk {
+    min-width: 92%;
+    /* Show larger cards for better visibility */
+    height: 30vh;
+    /* Increase height slightly for better content fit */
+  }
+
+  .card-silk img {
+    height: 90%;
+    /* Reduce image height for more space for text */
+  }
+
+  .card-title-silk {
+    height: 20%;
+    /* Increase title area height */
+  }
+
+  .nav-button-silk {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Adjust Navigation Button Position */
+  .left-button-silk {
+    left: -0.5rem;
+    /* Move button closer to the edge */
+  }
+
+  .right-button-silk {
+    right: -0.5rem;
+    /* Move button closer to the edge */
+  }
+}

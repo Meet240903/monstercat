@@ -1,0 +1,164 @@
+.footer-container {
+  background-color: #131112;
+  color: white;
+  margin: 2rem 10rem;
+  padding: 2rem;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.footer-columns {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Allow wrapping of columns */
+}
+
+.footer-column {
+  flex: 1 1 30%;
+  /* Allow columns to grow and shrink */
+  min-width: 200px;
+  /* Set a minimum width for each column */
+}
+
+.footer-column h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column p {
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.email-subscription {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.email-subscription input {
+  padding: 0.5rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-right: 1rem;
+  background-color: #131112;
+  border-bottom: 2px solid white;
+  flex: 1;
+  /* Allows the input to grow */
+}
+
+.email-subscription button {
+  background-color: #131112;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  /* Align items vertically centered */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Allows wrapping for smaller screens */
+  margin-top: 1rem;
+  /* Add some space above */
+}
+
+.footer-bottom p {
+  margin: 0;
+  /* Remove default margin */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-icons svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.footer-icon {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    margin: 0.1rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    /* Stack columns vertically */
+    align-items: flex-start;
+    /* Align items to the start */
+  }
+
+  .email-subscription input {
+    width: 100%;
+    /* Full width for input */
+    margin-bottom: 1rem;
+    /* Space below input */
+  }
+
+  .footer-column {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-icons svg {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center align items */
+  }
+
+  .footer-bottom p {
+    text-align: center;
+    /* Center text for smaller screens */
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    /* Space below text */
+  }
+
+  .footer-icons {
+    gap: 3rem;
+  }
+
+}

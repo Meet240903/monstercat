@@ -1,0 +1,186 @@
+/* Global content wrapper */
+.content-wrapper-vibrant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+/* Center content at the top */
+.center-content-vibrant {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.center-content-vibrant h2 {
+  font-size: 3.5rem;
+  color: transparent;
+  margin-bottom: 1rem;
+  width: 90%;
+  -webkit-text-stroke: 2px #50a584;
+}
+
+.center-content-vibrant p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Split container with margin */
+.split-container-vibrant {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 8rem;
+  align-items: center;
+}
+
+/* Left and right split styles */
+.split-left-vibrant,
+.split-right-vibrant {
+  flex: 1;
+}
+
+.split-left-vibrant {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.split-left-vibrant img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+.split-right-vibrant {
+  padding-left: 2rem;
+}
+
+.split-right-vibrant h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #50a584;
+
+}
+
+.split-right-vibrant p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+
+  font-style: italic;
+  text-transform: lowercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.split-right-vibrant button {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: background-color 0.3s ease;
+}
+
+.split-right-vibrant button:hover {
+  background-color: #3d8069;
+}
+
+/* Responsive Styles */
+
+/* For medium devices */
+@media (max-width: 1024px) {
+  .split-container-vibrant {
+    flex-direction: column;
+    margin: 3rem 5rem;
+  }
+
+  .split-left-vibrant,
+  .split-right-vibrant {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .split-left-vibrant img {
+    width: 80%;
+  }
+
+  .split-right-vibrant {
+    padding: 0;
+  }
+}
+
+/* For small devices */
+@media (max-width: 768px) {
+  .split-container-vibrant {
+    margin: 2rem 2rem;
+  }
+
+  .split-left-vibrant img {
+    width: 100%;
+  }
+
+  .split-right-vibrant h1 {
+    font-size: 1.8rem;
+  }
+
+  .split-right-vibrant p {
+    font-size: 1rem;
+  }
+
+  .split-right-vibrant button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+/* For extra small devices */
+@media (max-width: 480px) {
+  .content-wrapper-vibrant {
+    padding: 1rem;
+  }
+
+  .center-content-vibrant {
+    margin: 1rem;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .center-content-vibrant h2 {
+    font-size: 2rem;
+  }
+
+  .center-content-vibrant p {
+    font-size: 1rem;
+  }
+
+  .split-container-vibrant {
+    margin: 1.5rem 1rem;
+
+  }
+
+  .split-left-vibrant img {
+    width: 100%;
+  }
+
+  .split-right-vibrant {
+    text-align: left;
+  }
+
+  .split-right-vibrant h1 {
+    font-size: 1.5rem;
+  }
+
+  .split-right-vibrant p {
+    font-size: 0.9rem;
+  }
+
+  .split-right-vibrant button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+}
