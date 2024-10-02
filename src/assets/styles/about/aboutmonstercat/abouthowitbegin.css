@@ -1,0 +1,151 @@
+.about-howitbegin-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 15rem;
+}
+
+/* First main div styling */
+.about-howitbegin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  /* Spacing between first and second div */
+}
+
+.about-howitbegin-left,
+.about-howitbegin-right {
+  flex: 1;
+  margin: 1rem;
+}
+
+.about-howitbegin-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-howitbegin-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.about-howitbegin-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  /* Spacing between image and content */
+}
+
+.about-howitbegin-right h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  word-spacing: 0.5rem;
+}
+
+.about-howitbegin-right p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+/* Second main div styling */
+.about-company-values {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-company-values h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  word-spacing: 0.6rem;
+}
+
+.about-values-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-value {
+  width: 22%;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-value h1 {
+  font-size: 1.5rem;
+
+  margin-bottom: 0.9rem;
+}
+
+.about-value p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .about-howitbegin-container {
+    margin: 0 5rem;
+  }
+
+  .about-howitbegin-row {
+    flex-direction: column;
+  }
+
+  .about-howitbegin-right h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    ;
+  }
+
+  .about-howitbegin-image {
+    height: 50%;
+  }
+
+  .about-howitbegin-left,
+  .about-howitbegin-right {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .about-company-values h2 {
+    font-size: 2.3rem;
+  }
+
+  .about-values-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-value {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-howitbegin-container {
+    margin: 1rem;
+  }
+
+  .about-howitbegin-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-values-grid {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,107 @@
+/* Container styling */
+.slider-container-artists {
+  margin: 5rem 15rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Left content styling */
+.left-content-artists {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.left-content-artists h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  -webkit-text-stroke: 2px white;
+}
+
+.left-content-artists p {
+  margin: 0;
+  color: white;
+  -webkit-text-stroke: 2px white;
+  font-size: 2rem;
+}
+
+/* Slider styling */
+.slider-artists {
+  width: 100%;
+  overflow-x: hidden;
+  /* Hide overflow for better scrollbar control */
+}
+
+.image-container-artists {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  transition: transform 0.5s ease-in-out;
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: white #333;
+  /* Customize scrollbar colors */
+}
+
+.image-container-artists::-webkit-scrollbar {
+  height: 8px;
+  /* Height of the scrollbar */
+}
+
+.image-container-artists::-webkit-scrollbar-thumb {
+  background-color: white;
+  /* Scrollbar color */
+  border-radius: 10px;
+  /* Rounded edges */
+}
+
+.image-container-artists::-webkit-scrollbar-track {
+  background: #333;
+  /* Background of the scrollbar track */
+}
+
+.image-container-artists img {
+  width: 370px;
+  height: 400px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .slider-container-artists {
+    margin: 2rem 2rem;
+  }
+
+  .left-content-artists {
+    text-align: left;
+  }
+
+  .left-content-artists h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-content-artists p {
+    font-size: 1.5rem;
+    color: white;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .image-container-artists img {
+    width: 250px;
+    /* Adjust image size for smaller screens */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .left-content-artists {
+    text-align: left;
+  }
+
+  .image-container-artists img {
+    width: 100%;
+    /* Full width on very small screens */
+  }
+}

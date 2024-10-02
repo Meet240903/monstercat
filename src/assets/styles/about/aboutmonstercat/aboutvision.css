@@ -1,0 +1,139 @@
+/* Main container styling */
+.vision-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally */
+  padding: 5rem 2rem;
+  /* Add padding to the container */
+}
+
+/* Content styling */
+.vision-content {
+  text-align: center;
+  /* Center the vision text */
+  margin-bottom: 5rem;
+  color: white;
+  /* Margin below vision content */
+}
+
+.vision-content h1 {
+  font-size: 3rem;
+  /* Adjust font size for h1 */
+
+  /* Change to a suitable color */
+}
+
+.vision-content p {
+  font-size: 1.6rem;
+  /* Default font size for paragraphs */
+  line-height: 1.5;
+  font-style: italic;
+  margin: 3rem 30rem;
+
+  /* Improve readability */
+
+  /* Change to a suitable color */
+}
+
+/* Columns container */
+.columns-container-vision {
+  display: flex;
+  justify-content: space-between;
+  /* Space between columns */
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-end;
+  /* Max width for larger screens */
+  gap: 2rem;
+  /* Space between columns */
+}
+
+/* Individual column styling */
+.column-vision {
+  flex: 1;
+  /* Equal width for each column */
+  padding: 1rem;
+  /* Add padding for better spacing */
+  /* Background color for columns */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow effect */
+}
+
+.column-vision h2 {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.column-vision p {
+  padding: 2rem;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .vision-container {
+    padding: 2rem 1rem;
+    /* Adjust padding for smaller screens */
+  }
+
+  .vision-content h1 {
+    font-size: 2.5rem;
+    /* Adjust h1 font size for smaller screens */
+  }
+
+  .vision-content p {
+    font-size: 1rem;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+    line-height: 2rem;
+    /* Adjust paragraph font size */
+  }
+
+
+  .column-vision {
+    width: 100%;
+  }
+
+  .column-vision h2 {
+    text-align: left;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 2rem;
+  }
+
+  .column-vision p {
+    padding-left: 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-right: 0;
+  }
+
+  .columns-container-vision {
+    gap: 0rem;
+  }
+
+  .columns-container-vision {
+    flex-direction: column;
+    /* Stack columns on smaller screens */
+  }
+
+  .columns-container-vision {
+    max-width: 2000px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-content h1 {
+    font-size: 2rem;
+    /* Further adjust h1 font size for extra small screens */
+  }
+
+
+}

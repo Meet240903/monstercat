@@ -127,7 +127,12 @@ const Sidebar = () => {
 									</ul>
 								)}
 							</li>
-
+							<Link
+								to="/artists"
+								style={{ color: "white", textDecoration: "none" }}
+							>
+								<li>Artists</li>
+							</Link>
 							<li>
 								<span>About</span>
 								<button onClick={() => toggleSubmenu("about")}>
@@ -135,8 +140,18 @@ const Sidebar = () => {
 								</button>
 								{activeSubmenu === "about" && (
 									<ul className="submenu">
-										<li>About Monstercat</li>
-										<li>Diversity & Inclusion</li>
+										<Link
+											to="/aboutmonstercat"
+											style={{ color: "white", textDecoration: "none" }}
+										>
+											<li>About Monstercat</li>
+										</Link>
+										<Link
+											to="/diversity"
+											style={{ color: "white", textDecoration: "none" }}
+										>
+											<li>Diversity & Inclusion</li>
+										</Link>
 										<li>Code of Ethics</li>
 										<li>Environmental</li>
 										<li>Contact Us</li>

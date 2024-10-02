@@ -1,0 +1,144 @@
+.diversity-container {
+  background-image: url('../../../images//about//diversity//diversity-bg.webp');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+  text-align: left;
+  color: white !important;
+  position: relative;
+  border-radius: 8px;
+}
+
+.diversity-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity value here to make the image darker */
+  border-radius: 8px;
+  /* Matches the container's border-radius */
+  z-index: 1;
+  /* Ensures the overlay appears on top of the image but below the text content */
+}
+
+.diversity-container h2 {
+  margin-bottom: 2rem;
+  width: 80%;
+  font-size: 5rem;
+  color: white !important;
+  margin-left: 5rem;
+}
+
+.diversity-content p,
+.diversity-content ul,
+.diversity-content li {
+  color: white !important;
+  /* Applies white color to paragraphs, lists, and list items */
+}
+
+.diversity-content {
+  margin-top: 2rem;
+  border: 1px solid white;
+  width: 90%;
+  text-transform: lowercase;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  padding: 4rem 8rem;
+  font-size: 1.3rem;
+  word-spacing: 0.1rem;
+}
+
+.diversity-content p {
+  margin-bottom: 2rem;
+}
+
+.diversity-content ul {
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .diversity-container {
+    padding: 3rem;
+  }
+
+  .diversity-container h2 {
+    font-size: 3rem;
+  }
+
+  .diversity-content {
+    padding: 2.5rem 4rem;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .diversity-container {
+    padding: 2rem;
+  }
+
+  .diversity-container h2 {
+    font-size: 2.5rem;
+    margin-left: 3rem;
+  }
+
+  .diversity-content {
+    padding: 2rem 3rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .diversity-container {
+    padding: 1.5rem;
+  }
+
+  .diversity-container h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  .diversity-content {
+    padding: 1.5rem 2rem;
+  }
+
+  .diversity-content ul {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .diversity-container {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .diversity-container h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .diversity-content {
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .diversity-content ul {
+    margin-left: 1rem;
+  }
+
+  .diversity-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}

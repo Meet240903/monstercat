@@ -1,0 +1,120 @@
+.roster-container-roster {
+  margin: 2rem 15rem;
+}
+
+.left-content-roster {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.left-content-roster h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Grid styling */
+.grid-container-roster {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  row-gap: 2rem;
+  /* Gap between items */
+}
+
+.grid-item-roster {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Center items */
+}
+
+.grid-item-roster p {
+  margin: 1rem 0;
+}
+
+.grid-item-roster img {
+  height: 300px;
+  width: 300px;
+  /* Set a maximum height to control layout */
+  object-fit: cover;
+  /* Maintain aspect ratio and fill the item */
+
+  /* Optional: Rounded image corners */
+}
+
+.pagination-roster {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination-roster button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.pagination-roster button.active {
+  background-color: white;
+  color: black;
+  /* Active page color */
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .roster-container-roster {
+    margin: 2rem 5rem;
+    /* Adjust overall margin for medium screens */
+  }
+
+  .grid-container-roster {
+    grid-template-columns: repeat(3, 1fr);
+    /* Use 3 columns for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container-roster {
+    grid-template-columns: repeat(2, 1fr);
+    /* Use 2 columns for smaller screens */
+  }
+
+  .left-content-roster h1 {
+    font-size: 1.5rem;
+    /* Reduce font size */
+  }
+
+  .roster-container-roster {
+    margin: 2rem 1rem;
+    /* Reduce margins for smaller screens */
+  }
+
+  .grid-item-roster img {
+    height: 250px;
+    width: 250px;
+    /* Reduce image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container-roster {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .roster-container-roster {
+    margin: 2rem;
+    /* Adjust margins */
+  }
+
+  .grid-item-roster img {
+    height: 200px;
+    width: 170px;
+    /* Reduce image size for very small screens */
+  }
+}
