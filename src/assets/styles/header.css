@@ -58,7 +58,36 @@ body {
   padding: 20px;
   transition: right 0.3s ease;
   z-index: 999;
+  overflow-y: auto;
 }
+
+/* For Webkit browsers (Chrome, Safari, and Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: black; /* Background color of the track */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Optional: Adds a rounded effect */
+}
+
+/* Optional: Add hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e2e2e3; /* Change color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: white black; /* scrollbar color white, track color black */
+}
+
 
 .sidebar.open {
   right: 0;

@@ -16,6 +16,7 @@ import Silk from "./components/music/Silk";
 import Artists from "./components/Artist";
 import AboutMonstercat from "./components/about/AboutMonstercat";
 import Diversity from "./components/about/Diversity";
+import NewsPage from "./components/NewsPage";
 function App() {
 	return (
 		<BrowserRouter>
@@ -29,6 +30,7 @@ function App() {
 				<Route path="/artists" element={<Artists />} />{" "}
 				<Route path="/aboutmonstercat" element={<AboutMonstercat />} />{" "}
 				<Route path="/diversity" element={<Diversity />} />
+				<Route path="/news" element={<NewsPage />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

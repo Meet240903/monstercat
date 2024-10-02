@@ -159,7 +159,15 @@ const Sidebar = () => {
 									</ul>
 								)}
 							</li>
-
+							<li>
+								<Link
+									to="/news"
+									onClick={() => setIsMenuOpen(false)}
+									style={{ color: "white", textDecoration: "none" }}
+								>
+									News
+								</Link>
+							</li>
 							<li>
 								<span>Events</span>
 								<button onClick={() => toggleSubmenu("events")}>
