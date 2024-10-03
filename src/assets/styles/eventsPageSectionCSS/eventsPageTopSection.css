@@ -1,0 +1,99 @@
+.events-page-top-section-container {
+  background-image: url("../../images/events/topSectionImgs/bgImg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+}
+
+.events-page-top-section-title {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.events-page-top-section-title h1 {
+  font-size: 80px;
+  word-wrap: break-word;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+  line-height: 5rem;
+}
+
+.events-page-top-section-title h1 span {
+  color: #fff;
+}
+
+.events-page-top-section-upcomming-events-content {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.events-page-top-section-upcomming-events-content h1 {
+  font-size: 50px;
+  font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.events-page-top-section-upcomming-events-content-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #fff;
+  max-width: 1150px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem;
+}
+
+.events-page-top-section-upcomming-events-content-box img{
+    height: 150px;
+    width: 250px;
+}
+
+.events-page-top-section-upcomming-events-content-box p{
+    margin: 1rem 0 0 0;
+}
+
+.events-page-top-section-upcomming-events-content-box-button{
+    text-align: left;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.events-page-top-section-upcomming-events-content-box-button button{
+    background-color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 30%;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+
+@media (max-width:768px) {
+    .events-page-top-section-container {
+        padding: 6rem 1rem;
+    }
+    .events-page-top-section-title h1 {
+        font-size: 40px;
+        line-height: 2.2rem;
+    }
+    .events-page-top-section-upcomming-events-content h1 {
+        font-size: 20px;
+    }
+    .events-page-top-section-upcomming-events-content-box {
+        overflow-x: auto;
+    }
+    .events-page-top-section-upcomming-events-content-box img{
+        height: 100px;
+        width: 150px;
+    }
+    .events-page-top-section-upcomming-events-content-box p{
+        font-size: 12px;
+    }
+    .events-page-top-section-upcomming-events-content-box-button button{
+        width: 100%;
+        padding: 15px;
+    }
+}

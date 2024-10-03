@@ -1,0 +1,107 @@
+.upcomming-events-middle-section-container {
+  max-width: 1150px;
+  margin: 4rem auto;
+}
+
+.upcomming-events-middle-section-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.upcomming-events-middle-section-content-box {
+  width: 350px;
+  border: 1px solid #fff;
+}
+
+.upcomming-events-middle-section-content-box-img {
+  position: relative;
+}
+
+.upcomming-events-middle-section-content-box-img button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upcomming-events-middle-section-content-box-img button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.upcomming-events-middle-section-content-box-img img {
+  width: 100%;
+  height: 380px;
+  border-bottom: 1px solid #fff;
+}
+
+.upcomming-events-middle-section-content-body {
+  padding: 2rem;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 120px;
+}
+
+.upcomming-events-middle-section-content-body-date {
+  text-align: center;
+}
+
+.upcomming-events-middle-section-content-body-date h4 {
+  font-size: 22px;
+}
+
+.upcomming-events-middle-section-content-body-date h4 span {
+  font-size: 28px;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.upcomming-events-middle-section-content-inner-body p {
+  font-size: 24px;
+}
+
+.upcomming-events-middle-section-content-inner-body small {
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.upcomming-events-middle-section-content-footer button {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  justify-content: center;
+}
+
+.upcomming-events-middle-section-content-footer button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .upcomming-events-middle-section-content{
+        flex-direction: column;
+    }
+}

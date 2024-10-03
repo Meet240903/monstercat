@@ -17,6 +17,8 @@ import Artists from "./components/Artist";
 import AboutMonstercat from "./components/about/AboutMonstercat";
 import Diversity from "./components/about/Diversity";
 import NewsPage from "./components/NewsPage";
+import EventsPage from "./components/EventsPage";
+import UpcommingEventsPage from "./components/UpcommingEventsPage";
 function App() {
 	return (
 		<BrowserRouter>
@@ -31,6 +33,8 @@ function App() {
 				<Route path="/aboutmonstercat" element={<AboutMonstercat />} />{" "}
 				<Route path="/diversity" element={<Diversity />} />
 				<Route path="/news" element={<NewsPage />} />
+				<Route path="/events" element={<EventsPage />} />
+				<Route path="/upcomming-events" element={<UpcommingEventsPage />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

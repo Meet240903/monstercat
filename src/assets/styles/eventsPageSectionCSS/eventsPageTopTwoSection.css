@@ -1,0 +1,54 @@
+.events-page-top-two-section-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.events-page-top-two-section-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.events-page-top-two-section-left-content,
+.events-page-top-two-section-right-content {
+  width: 50%;
+}
+
+.events-page-top-two-section-left-content img {
+  width: 100%;
+}
+
+.events-page-top-two-section-right-content h1 {
+  font-size: 50px;
+  font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.events-page-top-two-section-right-content p {
+  margin: 0;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 2rem;
+  font-size: 18px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .events-page-top-two-section-container {
+    padding: 1rem;
+  }
+  .events-page-top-two-section-content {
+    flex-direction: column;
+  }
+  .events-page-top-two-section-left-content,
+  .events-page-top-two-section-right-content {
+    width: 100%;
+  }
+  .events-page-top-two-section-right-content p{
+    text-align: justify;
+  }
+
+  .events-page-top-two-section-right-content h1{
+    font-size: 24px;
+  }
+}

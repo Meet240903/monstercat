@@ -175,8 +175,24 @@ const Sidebar = () => {
 								</button>
 								{activeSubmenu === "events" && (
 									<ul className="submenu">
-										<li>Monstercat Events Experience</li>
-										<li>Upcoming Events</li>
+										<li>
+											<Link
+												to="/events"
+												onClick={() => setIsMenuOpen(false)}
+												style={{ color: "white", textDecoration: "none" }}
+											>
+												Monstercat Events Experience
+											</Link>
+										</li>
+										<li>
+											<Link
+												to="/upcomming-events"
+												onClick={() => setIsMenuOpen(false)}
+												style={{ color: "white", textDecoration: "none" }}
+											>
+												Upcoming Events
+											</Link>
+										</li>
 									</ul>
 								)}
 							</li>

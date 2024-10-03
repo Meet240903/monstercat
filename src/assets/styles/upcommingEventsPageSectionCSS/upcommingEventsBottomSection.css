@@ -1,0 +1,71 @@
+.upcomming-events-bottom-section-container {
+  max-width: 1150px;
+  margin: 3rem auto;
+}
+
+.upcomming-events-bottom-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upcomming-events-bottom-section-title h1 {
+  font-size: 40px;
+}
+
+.upcomming-events-bottom-section-title-buttons button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.upcomming-events-bottom-section-title-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upcomming-events-bottom-section-title-buttons button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.upcomming-events-bottom-section-content {
+  border: 1px solid #fff;
+  margin: 3rem 0;
+  padding: 5rem;
+}
+
+.upcomming-events-bottom-section-content h1 {
+  word-spacing: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .upcomming-events-bottom-section-container {
+    padding: 1rem;
+  }
+  .upcomming-events-bottom-section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .upcomming-events-bottom-section-title h1 {
+    font-size: 30px;
+  }
+  .upcomming-events-bottom-section-content {
+    border: 1px solid #fff;
+    margin: 3rem 0;
+    padding: 2rem;
+  }
+  .upcomming-events-bottom-section-content h1{
+    font-size: 18px;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+}
