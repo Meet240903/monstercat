@@ -19,6 +19,7 @@ import Diversity from "./components/about/Diversity";
 import NewsPage from "./components/NewsPage";
 import EventsPage from "./components/EventsPage";
 import UpcommingEventsPage from "./components/UpcommingEventsPage";
+import GoldPage from "./components/GoldPage";
 function App() {
 	return (
 		<BrowserRouter>
@@ -35,6 +36,7 @@ function App() {
 				<Route path="/news" element={<NewsPage />} />
 				<Route path="/events" element={<EventsPage />} />
 				<Route path="/upcomming-events" element={<UpcommingEventsPage />} />
+				<Route path="/gold" element={<GoldPage />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

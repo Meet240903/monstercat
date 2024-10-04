@@ -217,7 +217,15 @@ const Sidebar = () => {
 							</li>
 
 							{/* Additional Menu Items */}
-							<li>Gold</li>
+							<li>
+								<Link
+									to="/gold"
+									onClick={() => setIsMenuOpen(false)}
+									style={{ color: "white", textDecoration: "none" }}
+								>
+									Gold
+								</Link>
+							</li>
 							<li>Partners</li>
 							<li>Press</li>
 							<li>Player</li>

@@ -1,0 +1,86 @@
+.gold-page-features-section-container {
+  max-width: 1150px;
+  margin: 3rem auto;
+}
+
+.gold-page-features-section-title h4 {
+  font-size: 30px;
+  letter-spacing: 0.266rem;
+  word-spacing: 1rem;
+}
+
+.gold-page-features-section-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.gold-page-features-section-left-content,
+.gold-page-features-section-right-content {
+  width: 50%;
+}
+
+.gold-page-features-section-right-content img {
+  width: 100%;
+}
+
+.gold-page-features-section-left-content-box {
+  margin: 1rem 0;
+}
+
+.gold-page-features-section-left-content-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f1d384;
+  margin-bottom: 1rem;
+}
+
+.gold-page-features-section-left-content-box p {
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: none;
+}
+
+.gold-page-features-section-button {
+  text-align: center;
+}
+
+.gold-page-features-section-button button {
+  background-color: #f1d384;
+  padding: 15px 50px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.gold-page-features-section-button button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gold-page-features-section-container {
+    padding: 1rem;
+  }
+  .gold-page-features-section-title h4 {
+    font-size: 20px;
+    letter-spacing: 0.166rem;
+    word-spacing: normal;
+  }
+  .gold-page-features-section-content {
+    flex-direction: column-reverse !important;
+  }
+
+  .gold-page-features-section-left-content,
+  .gold-page-features-section-right-content {
+    width: 100%;
+  }
+  .gold-page-features-section-left-content-box p {
+    text-align: justify;
+  }
+}

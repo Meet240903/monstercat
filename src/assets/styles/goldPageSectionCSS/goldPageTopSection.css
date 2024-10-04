@@ -1,0 +1,171 @@
+.gold-page-top-section-container {
+  position: relative; /* Make the container the positioning context */
+  padding: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.gold-page-top-section-container::before {
+  content: ""; /* Required for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with opacity */
+  z-index: -1; /* Place the overlay behind the content */
+}
+
+.gold-page-top-section-title,
+.gold-page-top-section-content,
+.gold-page-top-section-bottom-content,
+.gold-page-top-section-bottom-content1 {
+  position: relative; /* Ensure content is positioned above the overlay */
+  z-index: 2; /* Place content above the overlay */
+}
+
+/* Keep the rest of your CSS */
+
+.gold-page-top-section-container {
+  padding: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gold-page-top-section-title {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.gold-page-top-section-title h1 {
+  font-size: 80px;
+  letter-spacing: 1rem;
+  word-spacing: 1rem;
+  margin: 2rem 0;
+  color: transparent;
+  -webkit-text-stroke: 2px #f1d384;
+  font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+}
+
+.gold-page-top-section-title h1 span {
+  color: #f1d384;
+}
+
+.gold-page-top-section-content {
+  max-width: 1150px;
+  margin: 5rem auto;
+  display: flex;
+  gap: 3rem;
+}
+
+.gold-page-top-section-left-content,
+.gold-page-top-section-right-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gold-page-top-section-right-content-title h4,
+.gold-page-top-section-left-content-title h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  word-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.gold-page-top-section-right-content img {
+  height: 300px;
+}
+
+.gold-page-top-section-left-inner-content {
+  display: flex;
+  gap: 20px;
+}
+
+.gold-page-top-section-left-inner-content p {
+  font-size: 18px;
+  font-style: italic;
+  text-transform: none;
+  font-weight: normal;
+  margin: 0;
+}
+
+.gold-page-top-section-left-inner-content-icon {
+  font-size: 30px;
+  color: #f1d384;
+}
+
+.gold-page-top-section-bottom-content {
+  max-width: 1150px;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.gold-page-top-section-bottom-content button {
+  background-color: #f1d384;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 50px;
+}
+
+.gold-page-top-section-bottom-content button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gold-page-top-section-bottom-content h1 {
+  font-size: 50px;
+}
+
+.gold-page-top-section-bottom-content h1 span {
+  font-size: 12px;
+  color: #c4c4c4;
+}
+
+.gold-page-top-section-bottom-content1 {
+  max-width: 1150px;
+  margin: 3rem auto;
+}
+
+.gold-page-top-section-bottom-content1 p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .gold-page-top-section-container {
+    padding: 1rem;
+  }
+  .gold-page-top-section-title h1 {
+    font-size: 30px;
+    word-spacing: normal;
+    letter-spacing: 0.12rem;
+  }
+  .gold-page-top-section-content {
+    flex-direction: column;
+  }
+  .gold-page-top-section-left-content,
+  .gold-page-top-section-right-content {
+    width: 100%;
+  }
+  .gold-page-top-section-bottom-content {
+    flex-direction: column;
+  }
+  .gold-page-top-section-right-content img {
+    height: 200px;
+  }
+}

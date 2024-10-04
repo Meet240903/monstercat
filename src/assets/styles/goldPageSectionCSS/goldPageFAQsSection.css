@@ -1,0 +1,99 @@
+.gold-page-faqs-section-container {
+  max-width: 1150px;
+  margin: 5rem auto;
+}
+
+.gold-page-faqs-section-title h1 {
+  font-size: 50px;
+  word-spacing: 1rem;
+  letter-spacing: 0.266rem;
+}
+
+.gold-page-faqs-section-content {
+  margin: 3rem 0;
+}
+
+.gold-page-faqs-section-content-box {
+  border: 1px solid #f1d384;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.gold-page-faqs-section-content-box p {
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.gold-page-faqs-section-content-box:hover {
+  color: #f1d384;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box-title p {
+  letter-spacing: 0.266rem;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box {
+  border: 1px solid #f1d384;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box:hover {
+  color: #f1d384;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box p {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box-accordion-content {
+  border: 1px solid #f1d384;
+  border-top: none;
+  padding: 2rem;
+}
+
+.gold-page-faqs-section-content-about-mc-gold-box-accordion-content p {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+  line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .gold-page-faqs-section-container {
+    padding: 1rem;
+  }
+  .gold-page-faqs-section-title h1 {
+    font-size: 30px;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+  .gold-page-faqs-section-content-about-mc-gold-box-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .gold-page-faqs-section-content-about-mc-gold-box p {
+    font-size: 16px;
+  }
+  .gold-page-faqs-section-content-about-mc-gold-box-accordion-content p {
+    font-size: 16px;
+    text-align: justify;
+  }
+}
